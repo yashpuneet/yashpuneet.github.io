@@ -2,10 +2,22 @@
 
 <style>
 
-	.top {
+	#top {
+		display: flex;
+		margin-right: 0px;
+		margin-left: 0px;
 		background-color: teal;
-		height: 20%;
+		height: 30%;
 		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#profile {
+		border-radius: 50%;
+		border: 3px solid #fff;
+		width: 20vh;
+		height: 20vh;
 	}
 
 
@@ -23,12 +35,8 @@
 
 		<header>
 
-			<section class="top">
-				
-				<h3> My Image</h3>
-				<img src="ProfileImg.jpg" width="200" height="200">				
-
-			</section>
+			<section id="top">
+				<img id="profile" src="ProfileImg.jpg" width="100" height="100">				</section>
 
 			<nav>
 
