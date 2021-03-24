@@ -2,14 +2,15 @@
 
 <style>
 
-	#top {
-		display: flex;
+	header {
+		display: grid;
+		grid-template-rows: 75% 25%;
+		grid-template-columns: 5% 10% 10% 50% 10% 10% 5%;
 		margin-right: 0px;
 		margin-left: 0px;
 		background-color: teal;
 		height: 30%;
 		width: 100%;
-		justify-content: center;
 		align-items: center;
 	}
 
@@ -18,30 +19,64 @@
 		border: 3px solid #fff;
 		width: 20vh;
 		height: 20vh;
+		grid-row-start: 1;
+		grid-column-start: 4;
+		justify-self: center;
 	}
 
+	h1 {
+		color: #fff;
+		grid-row-start: 2;
+		grid-column-start: 4;
+		justify-self: center;
+	}
+
+	.btn {
+		background-color: teal;
+		cursor: pointer;
+		border-radius: 50%;
+		height: 8vh;
+		width: 8vh;
+		color: white;
+	}
+
+	.btn:hover {
+		background-color: teal;
+		color: gold;
+	}
+
+	.github {
+		grid-row-start: 1;
+		grid-column-start: 3;
+	}
+
+	.linkedin {
+		grid-row-start: 1;
+		grid-column-start: 5;
+	}
 
 </style>
 
 <html>
 
 	<head>
-
+		<script src="https://kit.fontawesome.com/842eed2c3e.js" crossorigin="anonymous"></script>
 		<title>Yash Puneet</title>
-
 	</head>
 
 	<body>
-
 		<header>
+			<h1>Yash Puneet</h1>
 
-			<section id="top">
-				<img id="profile" src="ProfileImg.jpg" width="100" height="100">				</section>
+			<img id="profile" src="ProfileImg.jpg">
 
-			<nav>
+			<a href="https://github.com/yashpuneet" class="btn github">
+				<i class="fab fa-github btn github" style="font-size: 8vh; justify-self: center"></i>
+			</a>
 
-			</nav>
-
+			<a href="https://www.linkedin.com/in/yashpuneet" class="btn linkedin">
+				<i class="fab fa-linkedin btn linkedin" style="font-size: 8vh; justify-self: center"></i>
+			</a>
 		</header>
 
 		<main>
