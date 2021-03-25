@@ -2,6 +2,45 @@
 
 <style>
 
+	footer {
+		background-color: teal;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: teal;
+	}
+	
+	.left {
+		float: left;
+		color: white;
+		padding: 2vw;
+	}
+
+	.right {
+		float: right;
+		color: white;
+		padding: 2vw;
+	}
+
+	a {
+		padding: 5%;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: gold;
+	}
+
 	header {
 		display: grid;
 		grid-template-rows: 75% 25%;
@@ -87,12 +126,12 @@
 	<body>
 		<nav>
 			<ul>
-				<a href="pages/biography.html"><li>About Me</li></a>
-				<a href="pages/resume.html"><li>Resume</li></a>
-				<a href="pages/projects.html"><li>Projects</li></a>
-				<a href="pages/blog.html"><li>Blog</li></a>
-				<a href="pages/contact.html"><li>Contact Me</li></a>
-				<a href="pages/press.html"><li>Press</li></a>
+				<a href="pages/biography.html" class="left"><li>About Me</li></a>
+				<a href="pages/resume.html" class="left"><li>Resume</li></a>
+				<a href="pages/projects.html" class="left"><li>Projects</li></a>
+				<a href="pages/blog.html" class="left"><li>Blog</li></a>
+				<a href="pages/press.html" class="left"><li>Press</li></a>
+				<a href="pages/contact.html" class="right"><li>Contact Me</li></a>
 			</ul>
 		</nav>
 
@@ -120,17 +159,18 @@
 			dfehigfiusedvjhbaiusjhbdciudqiujfghuijdsbvjkbczx
 			cvndkjfbdiaslbviujcbaiusfbdhcbhkjsadsbnaiucjbnskjldbva
 			sdfobqlidsujabciuasdghfiugaediufgdisujvkjxcbvkljziufhdiujgf
-			dsaovdlksjbfgufgaiufghiudewsaghfiudsghvciufghadsviugfdgaiugdsa[]efddhiudsagfew]\we
+			dsaovdlksjbfgufkjhgsghvciufghadsviugfdgaiugdsa[]efddhiudsagfew]\we
 			asiudfgoiquwgfoqgwpeifdgpiogfidsahfgviudsgvljkhqw
 			fdiuvfgqiuldfgcsdihvcjlkxhbviulagsfpviudgpfidsavcgidfsauvghap</p>
 
 		</main>
 
 		<footer>
-			<h5>Yash Puneet</h5>
-			<a href="https://github.com/yashpuneet"><h6>Github</h6></a>
-			<a href="https://www.linkedin.com/in/yashpuneet"><h6>LinkedIn</h6></a>
-			<a href="pages/contact.html"><h6>Contact Me</h6></a>
+			<ul>
+				<a href="https://github.com/yashpuneet" class="left"><li>Github</li></a>
+				<a href="https://www.linkedin.com/in/yashpuneet" class="left"><li>LinkedIn</li></a>
+				<a href="pages/contact.html" class="right"><li>Contact Me</li></a>
+			</ul>
 		</footer>
 
 	</body>
