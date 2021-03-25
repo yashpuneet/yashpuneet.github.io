@@ -53,12 +53,6 @@
 		align-items: center;
 	}
 
-	main {
-		display: grid;
-		grid-template-rows: 10% 90%;
-		grid-template-columns: 70% 30%;
-	}
-
 	h2 {
 		text-align: center;
 	}
@@ -114,6 +108,28 @@
 		grid-column-start: 5;
 	}
 
+	.card {
+		display: grid;
+		grid-template-rows: 100%;
+		grid-template-columns: 60% 40%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+	}
+
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	.text {
+		grid-row-start: 1;
+		grid-column-start: 1;
+	}
+
+	.image {
+		grid-row-start: 1;
+		grid-column-start: 2;
+	}
+
 </style>
 
 <html>
@@ -149,19 +165,38 @@
 			</a>
 		</header>
 
-		<h2>One Liner About my Main Interests in Robotics</h2>
+		<h2>Projects</h2>
 
 		<main>
 			
-			<h3><strong>About Me:</strong></h2>
-			<p>iuwsdfguuergifds;ca;kldsnbckjdsbafbdfnlkdsanf;jbwejufhjvdsajf
-			sdafiwahbfgjbasijfdbikjabvsdjfkbcoisadsjabfkjvcbnoasdkdhfouibfvas
-			dfehigfiusedvjhbaiusjhbdciudqiujfghuijdsbvjkbczx
-			cvndkjfbdiaslbviujcbaiusfbdhcbhkjsadsbnaiucjbnskjldbva
-			sdfobqlidsujabciuasdghfiugaediufgdisujvkjxcbvkljziufhdiujgf
-			dsaovdlksjbfgufkjhgsghvciufghadsviugfdgaiugdsa[]efddhiudsagfew]\we
-			asiudfgoiquwgfoqgwpeifdgpiogfidsahfgviudsgvljkhqw
-			fdiuvfgqiuldfgcsdihvcjlkxhbviulagsfpviudgpfidsavcgidfsauvghap</p>
+			<div class="card">
+				<div class="text">
+					<br>
+					<h4>Project #1</h4>
+					<hr>
+					<p>Project Description</p>
+					<br>
+				</div>
+				<div class="image">
+					<p>Project Image</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="text">
+					<br>
+					<h4>Project #2</h4>
+					<hr>
+					<p>Project Description</p>
+					<br>
+				</div>
+				<div class="image">
+					<p>Project Image</p>
+				</div>
+			</div>
+
+			<br>
+			<br>
 
 		</main>
 
